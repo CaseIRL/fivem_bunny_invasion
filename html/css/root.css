@@ -1,0 +1,42 @@
+/*
+     ____    _    ____  _____ 
+    / ___|  / \  / ___|| ____|
+    | |    / _ \ \___ \|  _|  
+    | |___/ ___ \ ___) | |___ 
+    \____/_/   \_|____/|_____|
+                           
+         BUNNY INVASION
+*/
+
+/* fonts */
+/* you can import additional fonts here  */
+@import url('https://fonts.googleapis.com/css2?family=Julee&family=Open+Sans&family=Righteous&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Oswald&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=VT323&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Orbitron&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nova+Square&family=Oswald&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Audiowide&family=Nova+Square&family=Oswald&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Audiowide&family=Dancing+Script&family=Nova+Square&family=Oswald&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Archivo+Black&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Kanit&display=swap');
+
+@font-face {
+    font-family: 'EasterTime';
+    src: url('../assets/fonts/EasterTime.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Digital';
+    src: url('../assets/fonts/digital-7.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+/* Root styles */
+:root {
+
+}

@@ -1,0 +1,181 @@
+/*
+     ____    _    ____  _____ 
+    / ___|  / \  / ___|| ____|
+    | |    / _ \ \___ \|  _|  
+    | |___/ ___ \ ___) | |___ 
+    \____/_/   \_|____/|_____|
+                           
+         BUNNY INVASION
+*/
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background: none !important;
+}
+
+input:focus {
+    outline: none;
+}
+
+.hidden {
+    display: none !important;
+}
+
+#main_container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 100vw;
+    font-family: 'Roboto';
+}
+
+/* Scrollbar */
+::-webkit-scrollbar {
+    width: 0;
+}
+
+::-webkit-scrollbar-track {
+    background: none !important;
+    border: none !important;
+}
+
+::-webkit-scrollbar-thumb {
+    background: none !important;
+    border: none !important;
+}
+
+/* Leaderboard Container */
+.leaderboard {
+    position: fixed;
+    background-color: #f2c9c9;
+    color: #ecf0f1;
+    border-radius: 16px;
+    padding: 1%;
+    right: 2.5%;
+    top: 5%;
+    width: 18.25%;
+    height: 22.5%;
+    box-shadow: 5px 5px 5px #8beaaf, -5px -5px 5px #83ddd6;
+    font-family: 'Kanit';
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    border: 4px dashed white;
+    overflow: scroll;
+}
+
+/* Leaderboard Title */
+.leaderboard h1 {
+    position: fixed;
+    top: 1vh;
+    margin-right: 2px;
+    color: white;
+    text-align: center;
+    font-family: 'EasterTime';
+    font-size: 4.25rem;
+    text-shadow: -1px -1px 1px rgba(0, 0, 0, 1), 1px -1px 1px rgba(0, 0, 0, 1), -1px 1px 1px rgba(0, 0, 0, 1), 1px 1px 1px rgba(0, 0, 0, 1);
+    letter-spacing: -0.15rem;
+}
+
+/* Leaderboard List */
+.leaderboard_list {
+    list-style: none; /* Remove default list styling */
+    padding: 0;
+    margin: 0;
+    width: 100%;
+}
+
+/* Individual Player Entries */
+.leaderboard_list li {
+    position: relative;
+    background-color: #aca7c4;
+    border: 3px dashed #f7f396;
+    border-radius: 8px;
+    padding: 5px 10px;
+    margin-bottom: 10px;
+    display: flex;
+    justify-content: space-between;
+    animation: fadeIn 0.5s;
+    color: white;
+    text-shadow: -1px -1px 1px rgba(0, 0, 0, 1), 1px -1px 1px rgba(0, 0, 0, 1), -1px 1px 1px rgba(0, 0, 0, 1), 1px 1px 1px rgba(0, 0, 0, 1);
+}
+
+.leaderboard_list li:last-child {
+    margin-bottom: 0;
+}
+
+.position_emoji {
+    position: absolute;
+    top: -30%;
+    left: -4%;
+    font-size: 1.75vh;
+    text-shadow: none;
+}
+
+.player_score {
+    font-family: 'Digital';
+    font-size: 1.5rem;
+}
+
+/* Banner styles */
+.banner {
+    position: fixed;
+    background-color: #f2c9c9;
+    color: #ecf0f1;
+    border-radius: 16px;
+    padding: 1%;
+    top: 5%;
+    width: 25%;
+    height: fit-content;
+    box-shadow: 5px 5px 5px #8beaaf, -5px -5px 5px #83ddd6;
+    font-family: 'Kanit';
+    display: flex;
+    align-items: center;
+    text-align: center;
+    flex-direction: column;
+    border: 4px dashed white;
+}
+
+.banner h1 {
+    position: fixed;
+    top: 1vh;
+    margin-right: 2px;
+    color: white;
+    font-family: 'EasterTime';
+    font-size: 4.25rem;
+    text-shadow: -1px -1px 1px rgba(0, 0, 0, 1), 1px -1px 1px rgba(0, 0, 0, 1), -1px 1px 1px rgba(0, 0, 0, 1), 1px 1px 1px rgba(0, 0, 0, 1);
+    letter-spacing: -0.15rem;
+}
+
+/* Individual Player Entries */
+.banner_text {
+    width: 98%;
+    background-color: #aca7c4;
+    border: 3px dashed #f7f396;
+    border-radius: 8px;
+    padding: 5px 10px;
+    animation: fadeIn 0.5s;
+    color: white;
+    text-shadow: -1px -1px 1px rgba(0, 0, 0, 1), 1px -1px 1px rgba(0, 0, 0, 1), -1px 1px 1px rgba(0, 0, 0, 1), 1px 1px 1px rgba(0, 0, 0, 1);
+    text-align: center;
+    font-size: 1.2rem;
+}
+
+/* Simple fade-in animation */
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+/* Responsive Design - Adjusts for smaller screens */
+@media (max-width: 768px) {
+    #leaderboard {
+        width: 95%; /* Full width on smaller screens */
+        margin: 20px auto;
+    }
+}
